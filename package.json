@@ -1,0 +1,20 @@
+{
+  "name": "axb-cagnote",
+  "version": "0.0.0",
+  "description": "Simple interface to create a personal \"cagnote\" using paypal as backend for payments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aritz Beraza Garayalde",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.12.3",
+    "jade": "~1.9.2",
+    "mongoose": "~4.0.2",
+    "crypto": "0.0.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  }
+}
