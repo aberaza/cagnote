@@ -1,4 +1,15 @@
 var express = require('express');
+var mongoose = require('mongoose');
+
+//Init mongodb connection using mongoose
+mongoose.connect('mongodb://localhost/cagnote');
+mongoose.connection.on('error', function(err){
+    console.error(err);
+});
+
+mongoose.connection.once('open', function(cb){
+    console.info("Connection to mongodb stablished!");
+});
 
 var app = express();
 

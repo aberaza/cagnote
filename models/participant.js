@@ -9,3 +9,7 @@ var ParticipantSchema = new Schema({
     amount : {type : Number, default : 0 }
 });
 
+var Participant = mongoose.model('Participant', ParticipantSchema);
+
+exports = module.exports = Participant;
+

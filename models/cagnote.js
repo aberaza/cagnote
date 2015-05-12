@@ -1,3 +1,5 @@
+var mongoose = require('mongoose');
+
 var CagnoteSchema = new Schema({
     name : {type : String, default : '', trim : true},
     desc : {type : String, default : '', trim : true},
@@ -9,3 +11,7 @@ var CagnoteSchema = new Schema({
     recommendedAmount : {type : Number, default : 0}
 });
 
+
+var Cagnote = mongoose.model('Cagnote', CagnoteSchema);
+
+exports = module.exports = Cagnote;
